@@ -5,21 +5,21 @@
 class Vegaload < Formula
   desc "Open-source load testing for code and AI agents. One static binary."
   homepage "https://github.com/vegaload/vegaload"
-  version "0.4.0"
+  version "0.5.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/vegaload/vegaload/releases/download/v0.4.0/vegaload_0.4.0_darwin_amd64.tar.gz"
-      sha256 "6bfbd2a6bcf06ece3cae54fc493e8962f4536d262b8dbc28d9a4cc2e9579e586"
+      url "https://github.com/vegaload/vegaload/releases/download/v0.5.0/vegaload_0.5.0_darwin_amd64.tar.gz"
+      sha256 "a0ec4428651f16345d50d3eb58a30989318b74137ec6e2d85668b560ea67b1a3"
 
       define_method(:install) do
         bin.install "vegaload"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/vegaload/vegaload/releases/download/v0.4.0/vegaload_0.4.0_darwin_arm64.tar.gz"
-      sha256 "43ffb89fdb47819ddcf0151d2e89d917bd8e222a962d14869905fd162e0c13be"
+      url "https://github.com/vegaload/vegaload/releases/download/v0.5.0/vegaload_0.5.0_darwin_arm64.tar.gz"
+      sha256 "bd18e2ceeabe1fad95facf01c754648f024ef35fa50d884b1210230279af8318"
 
       define_method(:install) do
         bin.install "vegaload"
@@ -29,15 +29,15 @@ class Vegaload < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/vegaload/vegaload/releases/download/v0.4.0/vegaload_0.4.0_linux_amd64.tar.gz"
-      sha256 "d97bfb98d3c3a89c26c2714ae1eb176f3c8177b2f121ae4a9b43c0670307a558"
+      url "https://github.com/vegaload/vegaload/releases/download/v0.5.0/vegaload_0.5.0_linux_amd64.tar.gz"
+      sha256 "b2f5bb4bd5ffa0a327e81b478bfc7856f0da74dccdb5fd73ebc887beb5131c55"
       define_method(:install) do
         bin.install "vegaload"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/vegaload/vegaload/releases/download/v0.4.0/vegaload_0.4.0_linux_arm64.tar.gz"
-      sha256 "94438de942ab330dc3044ee1f1cf396e3ef5e84592aa9965889e0063373be168"
+      url "https://github.com/vegaload/vegaload/releases/download/v0.5.0/vegaload_0.5.0_linux_arm64.tar.gz"
+      sha256 "97bd9b96bcc742bb8b11a5fe9b12f4de51431b3ffb4b1bd863b497cb905b5a54"
       define_method(:install) do
         bin.install "vegaload"
       end
